@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random Number Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <strong>Random Generator</strong>
+      <button id="resetBtn">Reset</button>
+    </nav>
+    <main class="container main-container">
+      <section class="max-min">
+        <label for="minNumber">Minimo:</label>
+        <input type="number" id="minNumber" min="1" step="1" value="1" />
+        <br />
+        <label for="maxNumber">Massimo:</label>
+        <input type="number" id="maxNumber" min="0" step="1" value="100" />
+        <br />
+      </section>
+      <section id="valoreEsatto">
+        <label for="slider1">Numero esatto:</label>
+        <input type="range" id="slider1" min="1" max="10" value="0" />
+        <span id="slider1Value">1</span>
+      </section>
+      <section class="input-section">
+        <label for="number1">Prima squadra:</label>
+        <input type="number" id="number1" min="0" step="1" />
+        <br />
+        <label for="number2">Seconda squadra:</label>
+        <input type="number" id="number2" min="0" step="1" />
+        <br />
+        <button id="generateBtn" disabled>Genera numero casuale</button>
+      </section>
+      <section class="result-section">
+        <p id="randomNumber"></p>
+        <p id="comparisonResult"></p>
+      </section>
+
+      <section class="score-section">
+        <p>Squadra 1: <span id="score1">0</span></p>
+        <p>Squadra 2: <span id="score2">0</span></p>
+      </section>
+    </main>
+    <div id="gif-container">
+      <button id="toggleBtn">Ferma GIF</button>
+
+      <div class="gif-wrapper">
+        <img class="gif" src="manuPls.gif" width="87" height="87" />
+        <img
+          class="overlay-image"
+          src="manuPlsFirstFrame.gif"
+          width="87"
+          height="87"
+          style="display: none" />
+      </div>
+
+      <div class="gif-wrapper">
+        <img class="gif" src="molluGnomo.gif" width="87" height="87" />
+        <img
+          class="overlay-image"
+          src="molluGnomoFirstFrame.png"
+          width="87"
+          height="87"
+          style="display: none" />
+      </div>
+      <div class="gif-wrapper">
+        <img class="gif" src="giankoSmash.webp" width="87" height="87" />
+        <img
+          class="overlay-image"
+          src="giankoSmashFirstFrame.png"
+          width="87"
+          height="87"
+          style="display: none" />
+      </div>
+
+      <div class="gif-wrapper">
+        <img class="gif" src="PEFFO.gif" width="87" height="87" />
+        <img
+          class="overlay-image"
+          src="PEFFOFirstFrame.gif"
+          width="87"
+          height="87"
+          style="display: none" />
+      </div>
+      <div class="gif-wrapper">
+        <img class="gif" src="giammouWu.gif" width="87" height="87" />
+        <img
+          class="overlay-image"
+          src="giammouWuFirstFrame.gif"
+          width="87"
+          height="87"
+          style="display: none" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
