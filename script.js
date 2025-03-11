@@ -91,6 +91,14 @@ document
   .getElementById("generateBtn")
   .addEventListener("click", generaNumeroCasuale);
 
+document
+  .getElementById("generateBtn")
+  .addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      generaNumeroCasuale();
+    }
+  });
+
 document.getElementById("slider1").addEventListener("input", function () {
   document.getElementById("slider1Value").innerText = this.value;
 });
